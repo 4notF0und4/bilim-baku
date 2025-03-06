@@ -1,9 +1,11 @@
-import Header from "@/modules/home/components/Header";
+
+import Header from "@/modules/home/components/header/Header";
 import HeaderNews from "@/modules/home/components/header-news/HeaderNews";
 import styles from "./home.module.css";
 import CardsGrid from "./components/cards/CardsGrid";
+import InfoBlock from "@/shared/infoblock/InfoBlock";
 
-const Home = () => {
+function Home() {
   return (
     <div>
       <div className={styles.homeContainer}>
@@ -16,10 +18,11 @@ const Home = () => {
       </div>
       <div className={styles.cardWrapper}>
         <CardsGrid />
+      <InfoBlock/>
       </div>
     </div>
   );
-};
+}
 
 export default Home;
 
