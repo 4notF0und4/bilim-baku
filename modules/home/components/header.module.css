@@ -96,8 +96,8 @@ body {
 
 @media (max-width: 992px) {
   .header {
-    padding: 12px 30px;
-    flex-direction: column;
+    /* padding: 12px 30px; */
+    /* flex-direction: column; */
     align-items: center;
     text-align: center;
   }
@@ -107,11 +107,13 @@ body {
     gap: 16px;
   }
   .navLinks {
+    display: none;
     flex-direction: column;
     gap: 10px;
   }
   .buttons {
-    flex-direction: column;
+    display: block;
+    /* flex-direction: column; */
     gap: 10px;
   }
 }
@@ -143,4 +145,4 @@ body {
     height: 45px;
     font-size: 14px;
   }
-}
+} 

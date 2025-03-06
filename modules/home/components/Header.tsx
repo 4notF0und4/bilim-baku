@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import Logo from "./Logo";
-import ActiveLink from "@/shared/components/activeLinks/ActiveLink"; 
+import ActiveLink from "@/shared/components/activeLinks/ActiveLink";
+import HamburgerMenu from "@/shared/components/button/HamburgerMenu";
 import styles from "./header.module.css";
 
 export default function Header() {
@@ -34,7 +35,11 @@ export default function Header() {
           <button className={styles.langBtn}>EN</button>
           <button className={styles.registerBtn}>Qeydiyyat</button>
         </div>
+        <HamburgerMenu/>
       </header>
     </div>
   );
 }
+
+
+
