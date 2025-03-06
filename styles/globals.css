@@ -1,0 +1,27 @@
+
+
+:root {
+    --blue: #4CC9F0;
+    --purple: #6A00F4;
+    --yellow: #FFBE0B;
+    --dark-blue: #2D00F7;
+    --red: #F20000;
+    --black: #000000;
+    --white: #FFFFFF;
+  }
+  
+  body {
+    color: var(--black);
+    font-family: var(--font-kanit), sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .gotham-text {
+    font-family: var(--font-gotham), sans-serif;
+  }
+  
+
+
+  

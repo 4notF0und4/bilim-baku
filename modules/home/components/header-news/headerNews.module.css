@@ -1,0 +1,40 @@
+.headerNews {
+  text-align: center;
+  margin-top: 160px;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 18px; 
+  margin: 0;
+  letter-spacing: .3em;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 56px;
+  margin: 20px 10px;
+  line-height: 1.1  ;
+  
+}
+
+.button {
+  margin-top: 10px;
+  width: 197px;
+  height: 56px;
+  font-size: 16px; 
+  background: none;
+  border: 2px solid var(--white) !important;
+  color: var(--white);
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background: var(--white);
+  color: var(--purple); 
+}
+
+
