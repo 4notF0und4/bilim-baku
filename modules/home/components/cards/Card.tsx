@@ -1,7 +1,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { AiOutlineEnter } from "react-icons/ai";
+import { MdOutlineSubdirectoryArrowRight } from "react-icons/md";
 import Palette from "./Palette"; 
 import styles from "./card.module.css";
 
@@ -31,7 +31,7 @@ const Card: React.FC<CardProps> = ({ bgColor, iconColor, title,description  }) =
          Bax
         </Link>
         <div className={styles.iconWrapper} style={{ color: iconColor }}>
-        <AiOutlineEnter />
+       <MdOutlineSubdirectoryArrowRight />
         </div>
       </div>
     </div>

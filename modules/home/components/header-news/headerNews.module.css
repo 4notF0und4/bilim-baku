@@ -1,40 +1,37 @@
 .headerNews {
   text-align: center;
-  margin-top: 160px;
+  margin-top: 10rem; 
 }
 
 .subtitle {
   font-weight: 700;
-  font-size: 18px; 
+  font-size: 1.125rem; 
   margin: 0;
-  letter-spacing: .3em;
+  letter-spacing: 0.3em;
 }
 
 .title {
   font-weight: 800;
-  font-size: 56px;
-  margin: 20px 10px;
-  line-height: 1.1  ;
-  
+  font-size: 3.5rem; 
+  margin: 1.25rem 0.625rem; 
+  line-height: 1.1;
 }
 
 .button {
-  margin-top: 10px;
-  width: 197px;
-  height: 56px;
-  font-size: 16px; 
+  margin-top: 0.625rem; 
+  width: 12.3125rem; 
+  height: 3.5rem; 
+  font-size: 1rem;
   background: none;
   border: 2px solid var(--white) !important;
   color: var(--white);
   border: none;
-  border-radius: 40px;
+  border-radius: 2.5rem; 
   cursor: pointer;
   transition: 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .button:hover {
   background: var(--white);
-  color: var(--purple); 
+  color: var(--purple);
 }
-
-

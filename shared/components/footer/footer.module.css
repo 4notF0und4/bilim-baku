@@ -1,0 +1,318 @@
+.footer {
+    color: white;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 7.5rem;
+}
+
+.subscribeSection {
+    background: black;
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+ 
+}
+
+.subscribeSection h2 {
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+.subscribeForm {
+    padding: 2rem   ;
+    display: flex;
+    gap: 0.75rem;
+}
+.subscribeText {
+    padding: 2rem;
+}
+
+.subscribeForm input {
+    padding: 1rem 2rem;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    width: 20rem;
+    font-size: 1rem;
+    outline: none;
+    background-color: #525252;  
+}
+
+.subscribeForm button {
+    background-color: var(--purple);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.subscribeForm button:hover {
+    background-color: var(--dark-blue);
+
+}
+
+.twoColumnContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 75rem;
+    width: 100%;
+    gap: 2rem;
+    padding: 6.25rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+}
+ 
+
+
+.contacts {
+
+    flex: 1;
+    padding: 1rem;
+    max-width: 400px;
+  }
+
+  .contacts h4 {
+    color: var(--dark-blue);
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .contacts h2 {
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+
+.contacts h3 {
+    color: black;
+}
+.contatcsWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    background-color: white; 
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  .contatcsWrapper:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+
+  .contatcsWrapper h3 {
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    margin-left: 1rem; 
+ 
+  }
+
+  .contatcsWrapper  .copyIcon {
+    margin-left: 1rem; 
+    font-size: 1.5rem; 
+    opacity: 0.3; 
+    transition: opacity 0.3s ease;
+  }
+  .socialNetworks {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+.circle {
+  
+    width: 6rem;
+    height: 6rem;
+    background: #2F03F7;
+    border-radius: 50%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contacts, .messageForm{
+ 
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.messageForm h4 {
+    color: var(--dark-blue);
+}
+
+.messageForm {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem; background-color: white;
+    align-items: flex-start; 
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 2rem; 
+  }
+  
+   .messageForm input,
+  .messageForm textarea {
+    width: 100%;
+    max-width: 35rem;
+    padding: 1rem;
+    border: none;
+    background: #F8F8F8 ;
+    border-radius: 12px;
+    font-size: 1rem;
+    outline: none;
+    margin-bottom: 1rem;
+  } 
+  
+  .messageForm textarea {
+    min-height: 8rem;
+    resize: none;
+  } 
+  
+  .messageForm button {
+    width: 7.5rem;
+    padding: 0.75rem;
+    background-color: transparent;
+    color: black;
+    border: 0.125rem solid black;
+    border-radius: 2.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    align-self: fle;
+  }
+  
+  .messageForm button:hover {
+    background-color: var(--dark-blue);
+    color: white;
+  }
+
+  .footerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 75rem;
+    margin: 2rem auto 0;
+    padding: 1rem 0;
+  font-size: 0.875rem;
+    color: #333;
+  }
+
+  .footerBottom p {
+    margin: 0;
+  }
+
+  .crocusoft {
+    color: var(--dark-blue);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .crocusoft:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 64rem) {
+    .twoColumnContainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 3rem;
+    }
+
+    .contacts, .messageForm {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .messageForm {
+        align-items: center;
+    }
+
+    .messageForm button {
+        align-self: center;
+    }
+
+    .footerBottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 48rem) {
+    .subscribeSection {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .subscribeForm {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .subscribeForm input {
+        width: 100%;
+    }
+
+    .contacts h2 {
+        font-size: 1.5rem;
+    }
+
+    .messageForm input,
+    .messageForm textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .socialNetworks {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .circle {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+@media (max-width: 30rem) {
+    .subscribeForm {
+        flex-direction: column;
+    }
+
+    .subscribeForm input {
+        width: 100%;
+    }
+
+    .footerBottom {
+        font-size: 0.75rem;
+    }
+}
+
+
+
+  
+ 
+  

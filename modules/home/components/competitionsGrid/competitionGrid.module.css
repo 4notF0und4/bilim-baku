@@ -1,0 +1,114 @@
+.gridContainer {
+ 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  
+    gap: 1.25rem;
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 1.25rem;
+}
+
+.gridItem {position: relative;
+    background: var(--black);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    min-height: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+    color: white;
+}
+
+
+.gridItemWithBG {
+    background: url('/images/classroom.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.gridItemWithBG::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); 
+    border-radius: 1.5rem;
+    z-index: 0; 
+}
+
+
+
+.circle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid white;
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    background: none; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--black); 
+    z-index: 2;
+}
+
+.count {
+    color: white;
+    font-weight: 600;
+    padding: 2rem;  
+}
+
+.count p {
+    margin: 0;
+    font-size: 2rem;
+}
+
+
+.gridItemWithBG .content {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+   
+    gap: 1.2rem;
+    z-index: 1; }
+
+
+
+.content a {
+    font-size: 1.4rem;
+  padding-bottom: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.icon {
+   font-size: 0.8rem
+  
+}
+
+@media (max-width: 48rem) {
+    .gridContainer {
+        grid-template-columns: repeat(2, 1fr);  
+    }
+}
+
+@media (max-width: 30rem) {
+    .gridContainer {
+        grid-template-columns: repeat(1, 1fr);}
+}
+
+  

@@ -9,6 +9,13 @@
     --black: #000000;
     --white: #FFFFFF;
   }
+
+
+
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
   
   body {
     color: var(--black);

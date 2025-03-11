@@ -1,11 +1,13 @@
-import { FC, PropsWithChildren } from "react"
+import { FC, PropsWithChildren } from "react";
+import Footer from "@/shared/components/footer/Footer"; 
 
-const Layout:FC<PropsWithChildren> = ({children}) => {
-    return (
-        <>
-        {children}
-        </>
-    )
-}
+const Layout: FC<PropsWithChildren> = ({ children }) => {
+  return (
+    <>
+      <main>{children}</main>
+      <Footer />
+    </>
+  );
+};
 
-export default Layout
+export default Layout;

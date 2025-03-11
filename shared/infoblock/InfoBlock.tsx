@@ -6,7 +6,7 @@ import styles from './InfoBlock.module.css'
 const InfoBlock: React.FC = () => {
   return (
     <div className={styles.infoBlock}>
-      <Image src="/images/info-img.jpg" alt="About Bilim Baku" width={600} height={600} className={styles.image} layout="responsive" quality={100} priority/>
+      <Image src="/images/info-img.jpg" alt="About Bilim Baku" width={640} height={640} className={styles.image} style={{ width: "100%", height: "auto" }} quality={100} priority/>
       <div className={styles.textContent}>
         <h4>H A Q Q I M I Z D A</h4>
         <h2>Bilim Bakı Haqqında Məlumat</h2>

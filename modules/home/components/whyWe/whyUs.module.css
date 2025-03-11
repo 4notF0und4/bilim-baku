@@ -1,0 +1,111 @@
+.container {
+    max-width: 80rem;
+    margin-top: 7.5rem;
+    padding: 1rem;
+}
+
+.headerText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+.headerText h4 {
+    color: var(--dark-blue);
+    font-size: 1.25rem;
+    margin: 0;
+    letter-spacing: 0.5rem;     
+    word-spacing: 1rem; 
+}
+
+.headerText h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.gridContainer {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+
+.card {
+    text-align: left;
+    padding: 3rem;
+    min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    font-size: 1.25rem;
+    font-weight: bold;
+    position: relative;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card p {
+    opacity: 0.6;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.cardTitle {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+.cardTitle span {
+    font-size: 4rem;
+}
+
+.cardTitle h3 {
+    font-size: 2rem;
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0.1rem;
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2) 10px,
+        transparent 10px,
+        transparent 30px
+    );
+}
+
+.cardLink {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.cardLink a {
+    text-decoration: none;
+}
+
+
+@media (max-width: 48rem) {
+    .gridContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+

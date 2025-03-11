@@ -1,4 +1,4 @@
-'use client' // faylda deyishiklik eden kimi hydration problemi olurdu ilk renderde
+'use client' 
 
 import React from "react";
 import styles from "./headerNews.module.css";

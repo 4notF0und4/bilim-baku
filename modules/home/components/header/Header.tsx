@@ -34,6 +34,7 @@ export default function Header() {
         <div className={styles.buttons}>
           <button className={styles.langBtn}>EN</button>
           <button className={styles.registerBtn}>Qeydiyyat</button>
+        
         </div>
         <HamburgerMenu/>
       </header>
