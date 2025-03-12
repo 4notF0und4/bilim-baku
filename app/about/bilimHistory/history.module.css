@@ -1,0 +1,141 @@
+.historyContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+    box-sizing: border-box;
+
+}
+
+.header {
+    text-align: center;
+}
+
+.title {
+    color: var(--dark-blue);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.54rem;
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.description {
+    font-weight: 400;
+    opacity: 0.4;
+    margin-bottom: 2.5rem;
+}
+
+.text {
+    font-weight: 500;
+}
+
+.highlight {
+    font-weight: 700;
+    color: var(--dark-blue);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 62rem) {
+
+    .title {
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .subtitle {
+        font-size: 3rem; 
+    }
+
+    .description {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .text {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width: 48rem) {
+    .historyContainer {
+        padding: 1.5rem;
+    }
+
+    .title {
+        font-size: 1.5rem; 
+        letter-spacing: 0.15rem;
+    }
+
+    .subtitle {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        font-size: 1.2rem;
+    }
+
+    .text {
+        font-size: 1.1rem;
+    }
+}
+
+
+@media (max-width: 30rem) {
+    .historyContainer {
+        padding: 1rem;
+    }
+
+    .title {
+        font-size: 1.25rem; 
+        letter-spacing: 0.1rem;
+    }
+
+    .subtitle {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1.1rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 20rem) {
+    .historyContainer {
+        padding: 0.8rem;
+    }
+
+    .title {
+        font-size: 1.1rem;
+        letter-spacing: 0.05rem;
+    }
+
+    .subtitle {
+        font-size: 1.8rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .text {
+        font-size: 0.9rem;
+    }
+}
+

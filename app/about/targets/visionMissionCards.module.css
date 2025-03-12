@@ -1,0 +1,57 @@
+.cardsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: clamp(1rem, 2vw, 2rem);
+    max-width: 80rem;
+    width: 100%;
+    margin: clamp(1rem, 5vw, 7.5rem) auto 2rem;
+    padding: 0 2rem;
+  }
+  
+  .card {
+    flex: 1;
+    max-width: 48%;
+    min-width: 300px; 
+    padding: clamp(1rem, 2vw, 2rem);
+    border-radius: 10px;
+    font-size: clamp(0.9rem, 1vw, 1rem);
+  }
+  
+  .card h4 {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-weight: bold;
+    color: black;
+    margin-bottom: 1rem;
+  }
+  
+  .card p {
+    font-size: clamp(0.9rem, 1vw, 1rem);
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .leftCard {
+    background-color: #EEFAFE;
+  }
+  
+  .rightCard {
+    background-color: #F1E5F9;
+  }
+  
+  .cardHeader {
+    margin-bottom: 1rem;
+  }
+ 
+  @media (max-width: 768px) {
+    .cardsContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      max-width: 90%;
+    }
+  }
+  

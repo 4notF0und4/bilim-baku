@@ -1,0 +1,37 @@
+.breadcrumb {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 1rem 1rem;
+  }
+  
+  .breadcrumbItem {
+    display: flex;
+    align-items: center;
+  }
+  
+  .breadcrumbItem a {
+    color: var(--dark-blue);
+    text-decoration: underline;
+    display:flex;
+    align-items: center;
+  }
+  
+  .active {
+    font-weight: 700;
+    display:flex;
+    align-items: center;
+  }
+  
+  .breadcrumbSeparator {
+    margin: 0 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    color: var(--dark-blue);
+  }
+  
+
+ 
