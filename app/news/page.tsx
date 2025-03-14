@@ -1,3 +1,4 @@
+'use client'
 import Breadcrumbs from '@/shared/components/breadcrumbs/Breadcrumb'
 import styles from "./page.module.css"
 import React from 'react'

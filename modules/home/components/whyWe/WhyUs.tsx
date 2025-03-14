@@ -1,4 +1,4 @@
-
+'use client'
 import styles from './whyUs.module.css';
 import Link from 'next/link';
 import { MdOutlineSubdirectoryArrowRight } from 'react-icons/md';

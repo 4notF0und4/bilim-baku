@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import AsanLogo from '@/shared/components/icons/AsanLogo'
 import TurkTekLogo from '@/shared/components/icons/TurkTekLogo'

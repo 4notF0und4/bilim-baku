@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import styles from './competitionGrid.module.css'
 import { RxDoubleArrowRight } from "react-icons/rx";

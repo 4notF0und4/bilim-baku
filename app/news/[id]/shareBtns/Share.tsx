@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Facebook from '@/shared/components/icons/Facebook';
 import Twitter from '@/shared/components/icons/Twitter';

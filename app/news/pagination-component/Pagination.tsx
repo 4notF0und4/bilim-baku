@@ -12,6 +12,11 @@ const Pagination: React.FC = () => {
       setCurrentPage(page);
     }
   };
+  
+
+  if (!currentPage) {  
+    return null;   
+  }
 
   return (
     <div className={styles.paginationContainer}>

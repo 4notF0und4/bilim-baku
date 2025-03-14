@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import styles from './footer.module.css';
 import { MdContentCopy } from "react-icons/md";
