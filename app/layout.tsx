@@ -1,7 +1,9 @@
+'use client'
 import Layout from '@/shared/layout/Layout';
 import '@/styles/globals.css';
 import{Kanit} from 'next/font/google'
 import localFont from 'next/font/local';
+
 
 const kanit = Kanit({
   subsets: ['latin'],
@@ -34,13 +36,16 @@ const gotham = localFont({
 
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+
   return (
     <html lang="az" className={`${kanit.variable} ${gotham.variable}`}>
       <body>
       <Layout>
       {children}
       </Layout>
+    
      </body>
     </html>
   );
 }
+

@@ -1,0 +1,102 @@
+.twoColumnContainer {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    max-width: 75rem;
+    width: 100%;
+    gap: 4.5rem;
+    margin: 0 auto;
+}
+.imageWrapper {
+    flex: 1;
+    max-width: 50%; 
+ overflow: hidden;
+  }
+
+  .contacts {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+  }
+
+  .contacts h4 {
+    color: var(--dark-blue);
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.54rem;
+  }
+
+  .contacts h2 {
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+
+.contacts h3 {
+    color: black;
+}
+.contatcsWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    background-color: white; 
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  .contatcsWrapper:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+
+  .contatcsWrapper h3 {
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    margin-left: 1rem; 
+ 
+  }
+
+  .contatcsWrapper  .copyIcon {
+    margin-left: 1rem; 
+    font-size: 1.5rem; 
+    opacity: 0.3; 
+    transition: opacity 0.3s ease;
+  }
+  .socialNetworks {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .circle {
+  
+    width: 6rem;
+    height: 6rem;
+    background: #2F03F7;
+    border-radius: 50%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.description {
+    opacity: 0.5;
+}
+
+.imageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+  }
