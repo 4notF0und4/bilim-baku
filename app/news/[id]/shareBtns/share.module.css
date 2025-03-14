@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  
+}
+.container span {
+    align-self: flex-start;
+    font-weight: bold;
+    font-family: var(--font-kanit);
+    font-size: 1.6rem;
+}
+
+
+.socialNetworks {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+.circle {
+  
+    width: 6rem;
+    height: 6rem;
+    background: #2F03F7;
+    border-radius: 50%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
