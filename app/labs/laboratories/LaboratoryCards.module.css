@@ -1,0 +1,113 @@
+.container {
+  max-width: 80rem;
+  margin-top: 2rem;
+
+}
+
+.labItem {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.imageContainer {
+  flex: 1;
+}
+
+.labImage {
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  color: #2d3748;
+}
+
+.subtitle {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.54rem;
+}
+
+.description {
+  color: #4a5568;
+  line-height: 2;
+  font-size: 1rem;
+
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.registrationButton,
+.moreButton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+}
+
+.registrationButton {
+  background-color: var(--registration-button-color);
+  color: #ffffff;
+}
+
+.moreButton {
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+}
+
+
+.registrationButton:hover {
+  background-color: color-mix(in srgb, var(--registration-button-color) 80%, black); 
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.moreButton:hover {
+  background-color: black;
+  color: #ffffff;
+  transform: translateY(-2px); }
+
+
+@media (max-width: 768px) {
+  .labItem {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+
+  .reverse {
+    flex-direction: column;
+  }
+
+  .imageContainer,
+  .content {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}

@@ -7,12 +7,12 @@ import styles from "./cardComponent.module.css";
 import HeartIcon from "@/shared/components/icons/heartIcon";
 
 const cardData = [
-  { image: "/images/lab1.jpg", title: "Təbiət elmləri laboratoriyası", description: "Ornare et, sem non leo. Eleifend orci odio egestas luctus aliquet eu feugiat. Quis pellentesque varius tellus sollicitudin. Nunc nunc, tempus felis vestibulum pellentesque leo pellentesque cursus.", link: "#" },
-  { image: "/images/lab2.jpg", title: "İncəsənət laboratoriyası", description: "Ornare et, sem non leo. Eleifend orci odio egestas luctus aliquet eu feugiat. Quis pellentesque varius tellus sollicitudin. Nunc nunc, tempus felis vestibulum pellentesque leo pellentesque cursus.", link: "#" },
-  { image: "/images/lab3.jpg", title: "Riyaziyyat laboratoriyası", description: "Ornare et, sem non leo. Eleifend orci odio egestas luctus aliquet eu feugiat. Quis pellentesque varius tellus sollicitudin. Nunc nunc, tempus felis vestibulum pellentesque leo pellentesque cursus.", link: "#" },
-  { image: "/images/lab4.jpg", title: "Astronomiya və kosmos laboratoriyası", description: "Ornare et, sem non leo. Eleifend orci odio egestas luctus aliquet eu feugiat. Quis pellentesque varius tellus sollicitudin. Nunc nunc, tempus felis vestibulum pellentesque leo pellentesque cursus.", link: "#" },
-  { image: "/images/lab5.jpg", title: "Texnologiya laboratoriyası", description: "Ornare et, sem non leo. Eleifend orci odio egestas luctus aliquet eu feugiat. Quis pellentesque varius tellus sollicitudin. Nunc nunc, tempus felis vestibulum pellentesque leo pellentesque cursus.", link: "#" },
-  { image: "/images/lab6.jpg", title: "Sahibkarlıq laboratoriyası", description: "Ornare et, sem non leo. Eleifend orci odio egestas luctus aliquet eu feugiat. Quis pellentesque varius tellus sollicitudin. Nunc nunc, tempus felis vestibulum pellentesque leo pellentesque cursus.", link: "#" }
+  { image: "/images/lab1.png", title: "Təbiət elmləri laboratoriyası", description: "Ornare et, sem non leo. Eleifend orci odio egestas luctus aliquet eu feugiat. Quis pellentesque varius tellus sollicitudin. Nunc nunc, tempus felis vestibulum pellentesque leo pellentesque cursus.", link: "#" },
+  { image: "/images/lab2.png", title: "İncəsənət laboratoriyası", description: "Ornare et, sem non leo. Eleifend orci odio egestas luctus aliquet eu feugiat. Quis pellentesque varius tellus sollicitudin. Nunc nunc, tempus felis vestibulum pellentesque leo pellentesque cursus.", link: "#" },
+  { image: "/images/lab3.png", title: "Riyaziyyat laboratoriyası", description: "Ornare et, sem non leo. Eleifend orci odio egestas luctus aliquet eu feugiat. Quis pellentesque varius tellus sollicitudin. Nunc nunc, tempus felis vestibulum pellentesque leo pellentesque cursus.", link: "#" },
+  { image: "/images/lab4.png", title: "Astronomiya və kosmos laboratoriyası", description: "Ornare et, sem non leo. Eleifend orci odio egestas luctus aliquet eu feugiat. Quis pellentesque varius tellus sollicitudin. Nunc nunc, tempus felis vestibulum pellentesque leo pellentesque cursus.", link: "#" },
+  { image: "/images/lab5.png", title: "Texnologiya laboratoriyası", description: "Ornare et, sem non leo. Eleifend orci odio egestas luctus aliquet eu feugiat. Quis pellentesque varius tellus sollicitudin. Nunc nunc, tempus felis vestibulum pellentesque leo pellentesque cursus.", link: "#" },
+  { image: "/images/lab6.png", title: "Sahibkarlıq laboratoriyası", description: "Ornare et, sem non leo. Eleifend orci odio egestas luctus aliquet eu feugiat. Quis pellentesque varius tellus sollicitudin. Nunc nunc, tempus felis vestibulum pellentesque leo pellentesque cursus.", link: "#" }
 ];
 
 const CardComponents = () => {

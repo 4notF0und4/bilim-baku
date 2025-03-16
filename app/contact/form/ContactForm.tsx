@@ -23,10 +23,10 @@ const ContactForm = () => {
       <div className={styles.rightSection}>
         <h4>Ad və Soyad</h4>
         <div className={styles.inputGroup}>
-          <input type="text" placeholder="Ad..." className={styles.input} />
+          <input type="text" placeholder="Ad" className={styles.input} />
           <input type="email" placeholder="E-poçt" className={styles.input} />
         </div>
-        <textarea placeholder="Mesajınızı yazın..." className={styles.textarea}></textarea>
+        <textarea placeholder="Mesajınız" className={styles.textarea}></textarea>
         <button className={styles.button}>Göndər</button>
       </div>
     </div>
