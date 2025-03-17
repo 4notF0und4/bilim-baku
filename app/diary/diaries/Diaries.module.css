@@ -1,23 +1,283 @@
-.card {
-    background-color: #fff;
-    border: solid 4px #000;
-    padding: 2rem;
-    border-radius: 24px; 
-    max-width: 1240px;
-    height: 720px;
-    margin: 0 auto;
-    position: relative; 
+.container {
+  font-family: var(--font-pacifico), cursive;
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  width: 100%;
+  height: 50rem;
+  background: linear-gradient(45deg, #a3489b, #4cc9f0);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.progressCircle {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background: transparent;
+  border: 0.1875rem solid var(--purple);
+  border-radius: 50%;
+}
+
+.sheetWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 37.5rem;
+}
+.textArea {
+  font-family: var(--font-pacifico), cursive;
+  width: 100%;
+  height: 18.75rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 1.5rem;
+  background: white;
+  color: black;
+  font-size: 1rem;
+  resize: none;
+  position: relative;
+  z-index: 2;
+}
+
+.sheetWrapper::before {
+  content: "";
+  position: absolute;
+  top: 0.625rem;
+  left: 2.5rem;
+  width: 100%;
+  height: 100%;
+  border: 0.125rem dashed white;
+  border-radius: 1.5rem;
+  border-top: none;
+  border-left: none;
+  z-index: 1;
+}
+
+.left {
+  flex: 1;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 6rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.inputWrapper {
+  position: relative;
+  width: 29.375rem;
+  z-index: 1;
+}
+
+.inputWrapper::before {
+  content: "";
+  position: absolute;
+  top: 0.9375rem;
+  left: 0.9375rem;
+  height: 100%;
+  width: 31.25rem;
+  border: 0.125rem dashed white;
+  border-radius: 1.5rem;
+  border-top: none;
+  border-left: none;
+  z-index: -1;
+}
+
+.inputGroup input {
+  font-family: var(--font-pacifico), cursive;
+  width: 100%;
+  outline: none;
+  height: 2rem;
+  padding: 1rem;
+  border: 0.125rem solid transparent;
+  border-radius: 2.5rem;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.inputGroup input::placeholder {
+  font-family: var(--font-pacifico), cursive;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  margin-top: 6rem;
+}
+
+.leftButton,
+.rightButton {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.leftButton {
+  background-color: white;
+  color: var(--purple);
+}
+
+.rightButton {
+  background-color: var(--purple);
+  color: white;
+}
+
+.leftButton:hover {
+  background-color: var(--blue);
+  color: white;
+}
+
+.rightButton:hover {
+  background-color: var(--dark-blue);
+  color: #ffffff;
+}
+
+.right {
+  flex: 1;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.fullSheet {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1.25rem;
+}
+
+.sheetHeading {
+  color: white;
+}
+
+.fullTextAreaWrapper {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.fullTextArea {
+  width: 90%;
+  height: 21.875rem;
+  outline: none;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  background-color: white;
+  font-family: var(--font-pacifico), cursive;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: left;
+}
+
+.fullTextAreaWrapper::before {
+  content: "";
+  position: absolute;
+  width: 73.75rem;
+  height: 100%;
+  bottom: -1.125rem;
+  right: 2.625rem;
+  border-radius: 3rem;
+  border-right: 0.125rem dashed white;
+  border-bottom: 0.125rem dashed white;
+  border-top: none;
+  border-left: 0.125rem dashed white;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.fullTextArea::placeholder {
+  font-family: var(--font-pacifico), cursive;
+  color: rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+@media (max-width: 64rem) {
+  .container {
+    flex-direction: column;
+    text-align: center;
   }
-  
-  .card::before {
-    content: '';
-    position: absolute;
-    top: 15px;
-    left: 15px;
+
+  .left,
+  .right {
+    max-width: 100%;
+  }
+
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .inputGroup input {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftButton,
+  .rightButton {
+    width: 80%;
+  }
+}
+
+@media (max-width: 48rem) {
+  .container {
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .inputGroup {
     width: 100%;
-    height: 100%;
-    border: dashed 4px #000; 
-    border-radius: 24px; 
-    z-index: -1; 
-    box-sizing: border-box;
   }
+
+  .inputWrapper {
+    max-width: 90%;
+  }
+
+  .inputGroup input {
+    width: 100%;
+    padding: 0.7rem;
+  }
+
+  .leftButton,
+  .rightButton {
+    width: 100%;
+    padding: 0.8rem;
+  }
+}
+
