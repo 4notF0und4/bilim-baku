@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const Frame: React.FC<React.SVGProps<SVGElement>> = () => (
+const Frame: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="266"
@@ -20,6 +20,11 @@ const Frame: React.FC<React.SVGProps<SVGElement>> = () => (
         <path fill="#fff" d="M266 0H0v89.799h266z"></path>
       </clipPath>
     </defs>
+    <foreignObject x="10" y="10" width="246" height="70" color="var(--dark-blue)"> 
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
+        {children}
+      </div>
+    </foreignObject>
   </svg>
 );
 

@@ -2,12 +2,14 @@
 
 import styles from './LaboratoryCards.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const LaboratoryCards = () => {
   const labs = [
     {
       id: 1,
-      title: 'Texnologiya laboratoriyası',
+      title: 'Təbiət elmləri laboratoriyası',
+      slug: 'nature',
       subtitle: 'Laboratorİyalar',
       description: 'Morbi elementum condimentum risus mauris eu. Mauris, tincidunt aliquam adipiscing ut platea turpis aenean massa. Viverra lobortis malesuada pharetra, leo lacinia.',
       imageUrl: '/images/lab1.png',
@@ -20,6 +22,7 @@ const LaboratoryCards = () => {
     {
       id: 2,
       title: 'Astronomiya labaratoriyası',
+      slug: 'astronomy',
       subtitle: 'Laboratorİyalar',
       description: 'Morbi elementum condimentum risus mauris eu. Mauris, tincidunt aliquam adipiscing ut platea turpis aenean massa. Viverra lobortis malesuada pharetra, leo lacinia.',
       imageUrl: '/images/lab2.png',
@@ -33,6 +36,7 @@ const LaboratoryCards = () => {
     {
       id: 3,
       title: 'Texnologiya laboratoriyası',
+      slug: 'tech',
       subtitle: 'Laboratorİyalar',
       description: 'Morbi elementum condimentum risus mauris eu. Mauris, tincidunt aliquam adipiscing ut platea turpis aenean massa. Viverra lobortis malesuada pharetra, leo lacinia.',
       imageUrl: '/images/lab3.png',
@@ -45,6 +49,7 @@ const LaboratoryCards = () => {
     {
       id: 4,
       title: 'İncəsənət labaratoriyası',
+      slug: 'art',
       subtitle: 'Laboratorİyalar',
       description: 'Morbi elementum condimentum risus mauris eu. Mauris, tincidunt aliquam adipiscing ut platea turpis aenean massa. Viverra lobortis malesuada pharetra, leo lacinia.',
       imageUrl: '/images/lab4.png',
@@ -57,6 +62,7 @@ const LaboratoryCards = () => {
     {
       id: 5,
       title: 'Riyaziyyat laboratoriyası ',
+      slug: 'math',
       subtitle: 'Laboratorİyalar',
       description: 'Morbi elementum condimentum risus mauris eu. Mauris, tincidunt aliquam adipiscing ut platea turpis aenean massa. Viverra lobortis malesuada pharetra, leo lacinia.',
       imageUrl: '/images/lab5.png',
@@ -69,6 +75,7 @@ const LaboratoryCards = () => {
     {
       id: 6,
       title: 'Sahibkarlıq labaratoriyası',
+      slug: 'commercy',
       subtitle: 'Laboratorİyalar',
       description: 'Morbi elementum condimentum risus mauris eu. Mauris, tincidunt aliquam adipiscing ut platea turpis aenean massa. Viverra lobortis malesuada pharetra, leo lacinia.',
       imageUrl: '/images/lab6.png',
@@ -106,8 +113,9 @@ const LaboratoryCards = () => {
   } as React.CSSProperties} 
 >
   Qeydiyyat
-</button>
-              <button className={styles.moreButton}>Ətraflı bax</button>
+</button>       
+<Link href={`/labs/${lab.slug}`}>
+<button className={styles.moreButton}>Ətraflı bax</button></Link>
             </div>
           </div>
         </div>
