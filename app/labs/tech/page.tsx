@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import styles from "./page.module.css";
-import Breadcrumbs from "@/shared/components/breadcrumbs/Breadcrumb";
+import Breadcrumbs from "@/shared/components/navigation/Breadcrumb";
 import Frame from "@/shared/components/Frames/Frame";
 
 const TechPage = () => {
@@ -24,6 +24,7 @@ const TechPage = () => {
             width={800}
             height={400}
             className={styles.image}
+            priority={true}
           />
         </div>
          <div className={styles.div2}>
@@ -92,3 +93,4 @@ const TechPage = () => {
 };
 
 export default TechPage;
+

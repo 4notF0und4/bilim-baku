@@ -1,8 +1,9 @@
-'use client'
+
 import Layout from '@/shared/layout/Layout';
 import '@/styles/globals.css';
 import{Kanit} from 'next/font/google'
 import localFont from 'next/font/local';
+
 
 
 const kanit = Kanit({

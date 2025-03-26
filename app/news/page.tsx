@@ -1,5 +1,5 @@
 'use client'
-import Breadcrumbs from '@/shared/components/breadcrumbs/Breadcrumb'
+import Breadcrumbs from '@/shared/components/navigation/Breadcrumb'
 import styles from "./page.module.css"
 import React from 'react'
 import SearchBar from './search/SearchBar'

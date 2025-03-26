@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.errorCode {    
+    font-size: 6rem;
+    font-weight: bold;
+    color: #ff4757;
+}
+
+.errorMessage {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
