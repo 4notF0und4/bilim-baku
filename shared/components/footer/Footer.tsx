@@ -16,6 +16,27 @@ import Instagram from '../icons/Instagram';
 
 
 const Footer = () => {
+  const handleCopy = (text: string) => {
+    navigator.clipboard.writeText(text);
+    alert('Kopyalandı');
+  }
+  const handlePhoneClick = () => {
+    const phoneNumber = "+994122222222"; 
+    window.location.href = `https://wa.me/${phoneNumber}`;
+  };
+
+
+  const handleMailTo = () => {
+    const email = "example@example.com";
+    const subject = encodeURIComponent("Mövzu burada");
+    const body = encodeURIComponent("Mesaj mətni burada.");
+  
+    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`, "_blank");
+  };
+  
+
+
+
   return (
     <footer className={styles.footer}>
     
@@ -32,15 +53,20 @@ const Footer = () => {
         <h4>Əlaqə</h4>
         <h2>Bizimlə əlaqə</h2>
         <div className={styles.contatcsWrapper}>
-        <FaPhoneVolume size={24} color="#8B85FF" />
-          <h3>+994 12 222 22 22 <MdContentCopy className={styles.copyIcon}/></h3>
+      
+        <FaPhoneVolume size={24} color="#8B85FF" onClick={handlePhoneClick} style={{ cursor: 'pointer' }}/>
+          <h3>+994 12 222 22 22 <MdContentCopy className={styles.copyIcon} onClick={() => handleCopy('+994 12 222 22 22')} style={{ cursor: 'pointer' }}/></h3>
           </div>
         <div className={styles.contatcsWrapper}>
-        <BsEnvelopeFill size={24} color="#8B85FF"/>
-        <h3>hello@bilimbaku.com <MdContentCopy className={styles.copyIcon}/></h3></div>
+          
+     
+       
+          <BsEnvelopeFill size={24} color="#8B85FF"  style={{ cursor: 'pointer' }} onClick={handleMailTo}/>
+  
+        <h3>hello@bilimbaku.com <MdContentCopy className={styles.copyIcon} onClick={() => handleCopy('hello@bilimbaku.com')} style={{ cursor: 'pointer' }}/></h3></div>
         <div className={styles.contatcsWrapper}>
-        <IoLocationSharp size={24} color="#8B85FF"/>
-        <h3>Nizami küçəsi 12, Bakı <MdContentCopy className={styles.copyIcon}/></h3></div>
+        <IoLocationSharp size={24} color="#8B85FF" style={{ cursor: 'pointer' }}/>
+        <h3>Nizami küçəsi 12, Bakı <MdContentCopy className={styles.copyIcon} onClick={() => handleCopy('Nizami küçəsi 12, Bakı')} style={{ cursor: 'pointer' }}/></h3></div>
         <div className={styles.socialNetworks}>
         <div className={styles.circle}><Facebook/></div>
         <div className={styles.circle}><Twitter/></div>

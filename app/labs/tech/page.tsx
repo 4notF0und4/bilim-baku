@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import styles from "./page.module.css";
 import Breadcrumbs from "@/shared/components/navigation/Breadcrumb";
@@ -7,7 +5,7 @@ import Frame from "@/shared/components/Frames/Frame";
 
 const TechPage = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.labContainer}>
       <Breadcrumbs/>
       <div className={styles.ageGroups}>
         <span className={styles.ageGroup1}>6-8 yaş</span>
@@ -17,40 +15,41 @@ const TechPage = () => {
 
     <div className={styles.contentLayout}>
     <div className={styles.parent}>
-        <div className={styles.div1}>
+        <div className={`${styles.imageDiv} ${styles.imageContainer1}`}>
           <Image
             src="/images/lab1.png"
             alt="Tech Image"
-            width={800}
-            height={400}
+            fill={true}
             className={styles.image}
             priority={true}
+            sizes="(max-width: 40rem) 50vw, 150px"
           />
         </div>
-         <div className={styles.div2}>
+         <div className={`${styles.imageDiv} ${styles.imageContainer2}`}>
           <Image
             src="/images/labsExtra/tech1.png"
             alt="Tech Extra Image 1"
-            width={400}
-            height={400}
+            sizes="(max-width: 40rem) 50vw, 150px"
+            fill={true}
             className={styles.image}
           />
         </div>
-        <div className={styles.div3}>
+        <div className={`${styles.imageDiv} ${styles.imageContainer3}`}>
           <Image
             src="/images/labsExtra/tech1.png"
             alt="Tech Extra Image 2"
-            width={400}
-            height={200}
+          
+            sizes="(max-width: 40rem) 50vw, 150px"
+            fill={true}
             className={styles.image}
           />
         </div>
-        <div className={styles.div4}>
+        <div className={`${styles.imageDiv} ${styles.imageContainer4}`}>
           <Image
             src="/images/labsExtra/tech2.png"
             alt="Tech Extra Image 3"
-            width={400}
-            height={200}
+            sizes="(max-width: 40rem) 50vw, 150px"
+            fill={true}
             className={styles.image}
           />
         </div>
