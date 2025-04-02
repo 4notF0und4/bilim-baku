@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const Instagram: React.FC<React.SVGProps<SVGElement>> = () => (
+const Instagram: React.FC = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="32"

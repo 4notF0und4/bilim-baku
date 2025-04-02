@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MdOutlineSubdirectoryArrowRight } from "react-icons/md";
 import styles from "./cardComponent.module.css";
-import HeartIcon from "@/shared/components/icons/heartIcon";
+import HeartIcon from "@/shared/components/icons/HeartIcon";
 
 const cardData = [
   { image: "/images/lab1.png", title: "Təbiət elmləri laboratoriyası", description: "Ornare et, sem non leo. Eleifend orci odio egestas luctus aliquet eu feugiat. Quis pellentesque varius tellus sollicitudin. Nunc nunc, tempus felis vestibulum pellentesque leo pellentesque cursus.", link: "#" },

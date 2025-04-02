@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const Vision: React.FC<React.SVGProps<SVGElement>> = () => (
+const Vision: React.FC = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="100"
