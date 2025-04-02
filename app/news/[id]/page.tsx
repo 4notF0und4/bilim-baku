@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 import Breadcrumbs from "@/shared/components/navigation/Breadcrumb";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { RiDoubleQuotesR } from "react-icons/ri";
-import Share from "./shareBtns/Share";
+import Share from "../../../shared/components/button/shareBtns/Share";
 
 
 const NewsDetail = () => {

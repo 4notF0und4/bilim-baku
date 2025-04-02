@@ -49,6 +49,8 @@ const CityCenterCard = () => {
     },
   ];
 
+  
+
   return (
     <div className={styles.container}>
       {cityCenters.map((city, index) => (
