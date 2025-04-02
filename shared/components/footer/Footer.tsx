@@ -27,11 +27,9 @@ const Footer = () => {
 
 
   const handleMailTo = () => {
-    const email = "example@example.com";
-    const subject = encodeURIComponent("Mövzu burada");
-    const body = encodeURIComponent("Mesaj mətni burada.");
+    const email = "hello@bilimbaku.com";
   
-    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`, "_blank");
+    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`, "_blank");
   };
   
 
