@@ -7,7 +7,7 @@ import FeatureBox from "./components/featureBox/FeatureBox";
 import EducationGrid from "./components/educationGrid/EducationGrid";
 import TrainingSection from "./components/trainingSection/TrainingSection";
 import CardComponent from "./components/labCards/CardComponent";
-import GalleryFeatBox from "./components/galleryFeatBox/galleryFeatBox";
+import GalleryFeatBox from "./components/galleryFeatBox/GalleryFeatBox";
 import CompetitionGrid from "./components/competitionsGrid/CompetitionGrid";
 import WhyUs from "./components/whyWe/WhyUs";
 import PartnerLogos from "./components/partners/PartnerLogos";

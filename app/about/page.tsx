@@ -6,7 +6,7 @@ import InfoBlock from "@/shared/infoblock/InfoBlock";
 import History from "./bilimHistory/History";
 import StudentPhoto from "@/shared/components/student/StudentPhoto";
 import VisionMissionCards from "./targets/VisionMissionCards";
-import Breadcrumb from "@/shared/components/navigation/Breadcrumb";
+import Breadcrumb from "@/shared/components/navigation/breadcrumbs/Breadcrumb";
 
 const page = () => {
   return (

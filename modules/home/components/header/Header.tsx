@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import Logo from "./Logo";
-import ActiveLink from "@/shared/components/navigation/ActiveLink";
-import HamburgerMenu from "@/shared/components/navigation/HamburgerMenu";
+import ActiveLink from "@/shared/components/navigation/activeLinks/ActiveLink";
+import HamburgerMenu from "@/shared/components/navigation/menus/HamburgerMenu";
 import styles from "./header.module.css";
 
 export default function Header() {

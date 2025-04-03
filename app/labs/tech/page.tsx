@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Breadcrumbs from "@/shared/components/navigation/Breadcrumb";
+import Breadcrumbs from "@/shared/components/navigation/breadcrumbs/Breadcrumb";
 import Frame from "@/shared/components/Frames/Frame";
 
 const TechPage = () => {

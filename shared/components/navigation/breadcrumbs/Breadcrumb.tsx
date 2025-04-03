@@ -4,35 +4,19 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./breadcrumb.module.css";
 import { RiArrowRightDoubleLine } from "react-icons/ri";
+import { breadcrumbNames } from "./breadcrumbNames"; 
 
 const Breadcrumbs: React.FC = () => {
   const pathname = usePathname();
   const pathSegments = pathname.split("/").filter(Boolean);
-
-
-  const breadcrumbNames: Record<string, string> = {
-    "/": "Ana səhifə",   
-    "/about": "Haqqımızda",  
-    "/labs": "Laboratoriyalar",
-    "/labs/nature": "Təbiət elmləri laboratoriyası",
-    "/labs/astronomy": "Astronomiya laboratoriyası",
-    "/labs/tech": "Texnologiya laboratoriyası",
-    "/labs/art": "İncəsənət laboratoriyası",
-    "/labs/math": "Riyaziyyat laboratoriyası",
-    "/labs/commercy": "Sahibkarlıq laboratoriyası",
-    "/centers": "Mərkəzlər",  
-    "/news": "Xəbərlər",     
-    "/diary": "Günlük",     
-    "/contact": "Əlaqə",    
-  };
 
   return (
     <nav aria-label="breadcrumb">
       <ol className={styles.breadcrumb}>
         {[{ name: "Ana səhifə", href: "/" }, ...pathSegments.map((seg, i) => {
           const href = "/" + pathSegments.slice(0, i + 1).join("/");
-       
-          const name = breadcrumbNames[href] || seg.charAt(0).toUpperCase() + seg.slice(1);
+
+          const name = breadcrumbNames[href as keyof typeof breadcrumbNames] || seg.charAt(0).toUpperCase() + seg.slice(1);
           return { name, href };
         })].map(({ name, href }, index, arr) => (
           <li key={href} className={styles.breadcrumbItem}>
@@ -54,3 +38,4 @@ const Breadcrumbs: React.FC = () => {
 };
 
 export default Breadcrumbs;
+

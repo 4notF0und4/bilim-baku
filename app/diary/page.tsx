@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './page.module.css'
-import Breadcrumbs from '@/shared/components/navigation/Breadcrumb'
+import Breadcrumbs from '@/shared/components/navigation/breadcrumbs/Breadcrumb'
 import Diaries from './diaries/Diaries'
 
 const page = () => {

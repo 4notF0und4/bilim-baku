@@ -1,4 +1,4 @@
-import Breadcrumbs from '@/shared/components/navigation/Breadcrumb'
+import Breadcrumbs from '@/shared/components/navigation/breadcrumbs/Breadcrumb'
 import styles from './page.module.css'
 import React from 'react'
 
