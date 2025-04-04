@@ -10,6 +10,7 @@ import Facebook from '@/shared/components/icons/Facebook';
 import Twitter from '@/shared/components/icons/Twitter';
 import Instagram from '@/shared/components/icons/Instagram';
 import Image from 'next/image';
+import { toast } from 'react-toastify';
 const handlePhoneClick = () => {
   const phoneNumber = "+994122222222"; 
   window.location.href = `https://wa.me/${phoneNumber}`;
@@ -40,7 +41,7 @@ const contactInfo = [
 const ContactOption = () => {
   const handleCopy = (text: string) => {
     navigator.clipboard.writeText(text);
-    alert('Kopyalandı');
+    toast.success("Mətn uğurla kopyalandı!");
   }
  
   return (

@@ -8,6 +8,7 @@ import { IoLocationSharp } from "react-icons/io5";
 import Facebook from '../icons/Facebook';
 import Twitter from '../icons/Twitter';
 import Instagram from '../icons/Instagram';
+import { toast } from "react-toastify";
 
 
 
@@ -18,7 +19,7 @@ import Instagram from '../icons/Instagram';
 const Footer = () => {
   const handleCopy = (text: string) => {
     navigator.clipboard.writeText(text);
-    alert('Kopyalandı');
+  toast.success("Mətn uğurla kopyalandı!");
   }
   const handlePhoneClick = () => {
     const phoneNumber = "+994122222222"; 
