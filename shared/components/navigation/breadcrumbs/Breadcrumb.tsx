@@ -15,8 +15,9 @@ const Breadcrumbs: React.FC = () => {
       <ol className={styles.breadcrumb}>
         {[{ name: "Ana səhifə", href: "/" }, ...pathSegments.map((seg, i) => {
           const href = "/" + pathSegments.slice(0, i + 1).join("/");
-
-          const name = breadcrumbNames[href as keyof typeof breadcrumbNames] || seg.charAt(0).toUpperCase() + seg.slice(1);
+          const decoded = decodeURIComponent(seg).replace(/-/g, ' ');
+      
+const name = breadcrumbNames[href as keyof typeof breadcrumbNames] || decoded.charAt(0).toUpperCase() + decoded.slice(1);
           return { name, href };
         })].map(({ name, href }, index, arr) => (
           <li key={href} className={styles.breadcrumbItem}>
