@@ -3,7 +3,7 @@ import Layout from '@/shared/layout/Layout';
 import '@/styles/globals.css';
 import{Kanit} from 'next/font/google'
 import localFont from 'next/font/local';
-import { ToastContainer } from "react-toastify";
+import { Slide, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 
@@ -53,7 +53,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           pauseOnFocusLoss
           draggable
           pauseOnHover
-          theme="light"
+          theme="colored"
+          transition={Slide}
         />
       <Layout>
       {children}

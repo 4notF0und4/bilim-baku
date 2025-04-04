@@ -24,7 +24,7 @@ const slides = [
       title: "KİÇİK YAŞLI ŞAGİRDLƏR ÜÇÜN PROQRAMLAŞDIRMA!",
       description: "6-10 yaş arası uşaqlar üçün əyləncəli və interaktiv proqramlaşdırma dərsləri başlayır! Erkən yaşlardan kodlaşdırma öyrənin və gələcəyin texnoloji dünyasına ilk addımınızı atın.",
     },
-  ];
+  ]
   
   export default slides;
   
